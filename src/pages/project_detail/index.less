@@ -1,0 +1,503 @@
+.content {
+  position: relative;
+  margin: 0 auto;
+  width: 1280px;
+  height: auto;
+  padding: 20px 20px 0 20px;
+  margin-bottom: 40px;
+}
+
+.nav {
+  width: 100%;
+  height: 21px;
+  font-family: NotoSansHans-Regular;
+  font-size: 14px;
+  line-height: 21px;
+  .nav-p {
+    color: #9B9B9B;
+    cursor: pointer;
+  }
+  .nav-c {
+    color: #000000;
+  }
+}
+
+.main {
+  position: relative;
+  width: 1240px;
+  height: auto;
+  background: #FFFFFF;
+  border-radius: 4px;
+  margin-top: 24px;
+  padding: 0 40px;
+  .step {
+    position: relative;
+    width: 100%;
+    height: 207px;
+    ul {
+      position: relative;
+      width: 100%;
+      height: 207px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+    ul > li, .active, .no-active {
+      position: relative;
+      width: 345px;
+      height: 207px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      .right {
+        width: 247px;
+        height: 207px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-bottom: 35px;
+        .line {
+          width: 121px;
+          height: 0px;
+          border-bottom: 1px dashed #A7A7A9;;
+        }
+        .arrow {
+          width: 12.5px;
+          height: 16px;
+          color: #A7A7A9;
+        }
+      }
+      .solid > .line {
+        border-bottom: 1px solid #A7A7A9;;
+      }
+      .left {
+        position: relative;
+        width: 98px;
+        height: 207px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        .icon {
+          width: 90px;
+          height: 91px;
+          background-size: cover;
+          display: inline-block;
+          cursor: pointer;
+        }
+        > p {
+          font-family: PingFangSC-Medium;
+          font-size: 16px;
+          color: #303033;
+          line-height: 22px;
+          margin-top: 13px;
+          font-weight: bold;
+        }
+      }
+    }
+    ul > li:nth-child(1) > .active > .left > .icon {
+      background: url("./img/chuangkit_design_icon1.png");
+    }
+    ul > li:nth-child(2) > .no-active > .left > .icon {
+      background: url("./img/chuangkit_design_icon2.png");
+    }
+    ul > li:nth-child(3) > .no-active > .left > .icon {
+      background: url("./img/chuangkit_design_icon3.png");
+    }
+    ul > li:nth-child(4) > .no-active > .left > .icon {
+      background: url("./img/chuangkit_design_icon4.png");
+    }
+    ul > li:nth-child(2) > .active > .left > .icon {
+      background: url("./img/chuangkit_design_icon2_active.png");
+    }
+    ul > li:nth-child(3) > .active > .left > .icon {
+      background: url("./img/chuangkit_design_icon3_active.png");
+    }
+    ul > li:nth-child(4) > .active > .left > .icon {
+      background: url("./img/chuangkit_design_icon4_active.png");
+    }
+    ul > li:last-child {
+      position: relative;
+      width: 90px;
+      height: 207px;
+    }
+  }
+
+  .from-group {
+    .solid-line {
+      width: 100%;
+      height: 65px;
+      border-top: 1px solid #DDDDDD;
+      p {
+        font-family: PingFangSC-Regular;
+        font-size: 13px;
+        color: #7B7B7B;
+        line-height: 65px;
+        span {
+          color: #000015;
+        }
+      }
+    }
+    .sub {
+      width: 100%;
+      height: 32px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      .sub-btn {
+        width: 120px;
+        height: 32px;
+        cursor: pointer;
+        background: #07AEFC;
+        border-radius: 2px;
+        font-family: NotoSansHans-Medium;
+        font-size: 12px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 32px;
+        text-align: center;
+      }
+      .disabled {
+        background: #A7A7A9;
+        color: #FFFFFF;
+      }
+    }
+    .custom {
+      border-top: 1px solid #DDDDDD !important;
+      justify-content: space-between;
+    }
+    .has-commit {
+      border-top: 1px solid #DDDDDD !important;
+      width: 1160px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      > .icon {
+        width: 187px;
+        height: 88px;
+        background: url("./img/chuangkit_design_thank.png");
+        background-size: cover;
+      }
+      > .title {
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: #4F4F4F;
+        line-height: 12px;
+        margin-top: 144px;
+      }
+    }
+    .wait-back {
+      width: 1051px;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      > .icon {
+        width: 187px;
+        height: 124px;
+        background: url("./img/chuangkit_design_wait2.png");
+        background-size: cover;
+      }
+      > .title {
+        font-family: PingFangSC-Regular;
+        font-size: 13px;
+        color: #4F4F4F;
+        line-height: 12px;
+        margin-top: 30px;
+      }
+    }
+    .optimize {
+      width: 1051px;
+      height: auto;
+      min-height: 200px;
+      padding: 40px;
+      border: 1px solid #DDDDDD;
+      > .thumb {
+        width: 180px;
+        height: 120px;
+        margin-right: 8px;
+      }
+    }
+    .dashed-line {
+      width: 100%;
+      height: auto;
+      border-top: 1px dashed #DDDDDD;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 24px 0;
+      p {
+        font-family: PingFangSC-Regular;
+        font-size: 13px;
+        color: #7B7B7B;
+        line-height: 18px;
+        span {
+          color: #000015;
+        }
+      }
+      .download {
+        width: 120px;
+        height: 32px;
+        background: #07AEFC;
+        border-radius: 2px;
+        font-family: NotoSansHans-Medium;
+        font-size: 12px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 32px;
+        cursor: pointer;
+      }
+      .zip-group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .zip-item {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: center;
+          width: auto;
+          min-width: 100px;
+          height: 55px;
+          .icon {
+            width: 32px;
+            height: 32px;
+            background: url("./img/chuangkit_design_zip.png");
+            background-size: cover;
+          }
+          .name {
+            font-family: PingFangSC-Regular;
+            font-size: 13px;
+            color: #4F4F4F;
+            line-height: 13px;
+            margin-top: 9px;
+          }
+        }
+      }
+      .introduce {
+        width: 1095px;
+        height: 73px;
+        border: 1px solid #DDDDDD;
+        padding: 16px 52px 16px 14px;
+        font-family: PingFangSC-Regular;
+        font-size: 13px;
+        color: #303033;
+        line-height: 1.5;
+        resize: none;
+      }
+      textarea::-webkit-scrollbar {
+        display: none; //去滚动条
+      }
+    }
+    .commit {
+      width: 1160px;
+      height: 460px;
+      border-top: 1px solid #DDDDDD;
+      .top-tip {
+        width: 100%;
+        height: 78px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        > .title {
+          font-family: PingFangSC-Regular;
+          font-size: 13px;
+          color: #4F4F4F;
+          line-height: 68px;
+        }
+        > .star {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-left: 160px;
+          > span {
+            font-size: 23px;
+            margin: 0 2px;
+            color: #979797;
+            cursor: pointer;
+          }
+          > .ch {
+            color: #F12C20;
+          }
+        }
+      }
+      .commit-text {
+        width: 1160px;
+        height: 115px;
+        border: 1px solid #DDDDDD;
+        resize: none;
+      }
+      textarea::-webkit-scrollbar {
+        display: none; //去滚动条
+      }
+    }
+  }
+
+  .wait-main {
+    width: 1160px;
+    height: 554px;
+    border-top: 1px solid #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    .wait-icon {
+      width: 187px;
+      height: 124px;
+      background: url("./img/chuangkit_design_wait.png");
+      background-size: cover;
+    }
+    .wait-icon1 {
+      width: 187px;
+      height: 124px;
+      background: url("./img/chuangkit_design_wait1.png");
+      background-size: cover;
+    }
+    .wait-icon2 {
+      width: 187px;
+      height: 124px;
+      background: url("./img/chuangkit_design_success.png");
+      background-size: cover;
+    }
+    .wait-title {
+      font-family: PingFangSC-Medium;
+      font-size: 16px;
+      color: #7B7B7B;
+      line-height: 22px;
+      margin-top: 26px;
+    }
+  }
+  .wait-chose {
+    width: 1160px;
+    height: 381px;
+    border-top: 1px solid #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    .chose-title {
+      font-family: PingFangSC-Regular;
+      font-size: 16px;
+      color: #4F4F4F;
+      line-height: 16px;
+    }
+    .btn-group {
+      display: flex;
+      flex-direction: row;
+      .chose-btn {
+        width: 120px;
+        height: 32px;
+        background: #07AEFC;
+        border-radius: 2px;
+        font-family: NotoSansHans-Medium;
+        font-size: 12px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 32px;
+        text-align: center;
+        margin: 100px 16px 0 16px;
+        cursor: pointer;
+      }
+    }
+  }
+  .data-list {
+    position: relative;
+    width: 1160px;
+    min-height: 554px;
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-top: 24px;
+    .item {
+      position: relative;
+      padding-bottom: 24px;
+      .top-info {
+        width: 100%;
+        height: 13px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        span {
+          font-family: PingFangSC-Regular;
+          font-size: 13px;
+          color: #4F4F4F;
+          line-height: 13px;
+        }
+      }
+      .list-main {
+        position: relative;
+        width: 100%;
+        height: 168px;
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid #DDDDDD;
+        border-bottom: 1px solid #DDDDDD;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .left-block {
+          width: 800px;
+          height: 120px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .thumb {
+            width: 180px;
+            height: 120px;
+            margin-right: 8px;
+          }
+        }
+        .right-block {
+          width: 120px;
+          height: 120px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .btn {
+            width: 120px;
+            height: 32px;
+            background: #07AEFC;
+            border-radius: 2px;
+            font-family: NotoSansHans-Medium;
+            font-size: 12px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            line-height: 32px;
+            text-align: center;
+            cursor: pointer;
+          }
+          .chosed {
+            width: 64px;
+            height: 64px;
+            background: url("./img/chuangkit_design_c.png");
+          }
+          .nochosed {
+            width: 64px;
+            height: 64px;
+            background: url("./img/chuangkit_design_nc.png");
+          }
+        }
+      }
+    }
+    ul li:last-child {
+      padding-bottom: 8px;
+    }
+    ul li:last-child .list-main {
+      border-bottom: 1px solid #FFFFFF;
+    }
+  }
+}
