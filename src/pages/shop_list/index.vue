@@ -30,7 +30,14 @@
             <div class="right1"></div>
           </div>
           <div class="detail">
-
+            <div class="row">
+              <div class="item">出品提案：1/个</div>
+              <div class="item">提案时间：72/小时</div>
+            </div>
+            <div class="row">
+              <div class="item">修改提案：1/次</div>
+              <div class="item">设计服务：初级设计师</div>
+            </div>
           </div>
           <div class="num_wall">
             <div class="btn">-</div>
@@ -59,7 +66,14 @@
             <div class="right2"></div>
           </div>
           <div class="detail">
-
+            <div class="row">
+              <div class="item">出品提案：1/个</div>
+              <div class="item">提案时间：72/小时</div>
+            </div>
+            <div class="row">
+              <div class="item">修改提案：1/次</div>
+              <div class="item">设计服务：初级设计师</div>
+            </div>
           </div>
           <div class="num_wall">
             <div class="btn">-</div>
@@ -88,7 +102,14 @@
             <div class="right3"></div>
           </div>
           <div class="detail">
-
+            <div class="row">
+              <div class="item">出品提案：1/个</div>
+              <div class="item">提案时间：72/小时</div>
+            </div>
+            <div class="row">
+              <div class="item">修改提案：1/次</div>
+              <div class="item">设计服务：初级设计师</div>
+            </div>
           </div>
           <div class="num_wall">
             <div class="btn">-</div>
