@@ -16,7 +16,7 @@
   @import "base/reset.css";
 
   html, body, #app {
-    background: #F7F9FB;
+    background: rgb(243, 244, 247);
     min-height: 100%;
     width: 100%;
   }
