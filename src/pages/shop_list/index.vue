@@ -31,15 +31,15 @@
           </div>
           <div class="detail">
             <div class="row">
-              <div class="item">出品提案：1/个</div>
-              <div class="item">提案时间：72/小时</div>
+              <div class="item item-l"><span class="icon icon11"></span><span class="text">出品提案：1/个</span></div>
+              <div class="item"><span class="icon icon12"></span><span class="text">提案时间：72/小时</span></div>
             </div>
             <div class="row">
-              <div class="item">修改提案：1/次</div>
-              <div class="item">设计服务：初级设计师</div>
+              <div class="item item-l"><span class="icon icon13"></span><span class="text">修改提案：1/次</span></div>
+              <div class="item"><span class="icon icon14"></span><span class="text">设计服务：初级设计师</span></div>
             </div>
           </div>
-          <div class="num_wall">
+          <div class="num_wall" v-if="nav[main_select]['child'][min_select]['type']===1">
             <div class="btn">-</div>
             <div class="num">1</div>
             <div class="btn">+</div>
@@ -67,15 +67,15 @@
           </div>
           <div class="detail">
             <div class="row">
-              <div class="item">出品提案：1/个</div>
-              <div class="item">提案时间：72/小时</div>
+              <div class="item item-l"><span class="icon icon21"></span><span class="text">出品提案：1/个</span></div>
+              <div class="item"><span class="icon icon22"></span><span class="text">提案时间：72/小时</span></div>
             </div>
             <div class="row">
-              <div class="item">修改提案：1/次</div>
-              <div class="item">设计服务：初级设计师</div>
+              <div class="item item-l"><span class="icon icon23"></span><span class="text">修改提案：1/次</span></div>
+              <div class="item"><span class="icon icon24"></span><span class="text">设计服务：初级设计师</span></div>
             </div>
           </div>
-          <div class="num_wall">
+          <div class="num_wall" v-if="nav[main_select]['child'][min_select]['type']===1">
             <div class="btn">-</div>
             <div class="num">1</div>
             <div class="btn">+</div>
@@ -103,15 +103,15 @@
           </div>
           <div class="detail">
             <div class="row">
-              <div class="item">出品提案：1/个</div>
-              <div class="item">提案时间：72/小时</div>
+              <div class="item item-l"><span class="icon icon31"></span><span class="text">出品提案：1/个</span></div>
+              <div class="item"><span class="icon icon32"></span><span class="text">提案时间：72/小时</span></div>
             </div>
             <div class="row">
-              <div class="item">修改提案：1/次</div>
-              <div class="item">设计服务：初级设计师</div>
+              <div class="item item-l"><span class="icon icon33"></span><span class="text">修改提案：1/次</span></div>
+              <div class="item"><span class="icon icon34"></span><span class="text">设计服务：初级设计师</span></div>
             </div>
           </div>
-          <div class="num_wall">
+          <div class="num_wall" v-show="nav[main_select]['child'][min_select]['type']===1">
             <div class="btn">-</div>
             <div class="num">1</div>
             <div class="btn">+</div>
@@ -153,11 +153,11 @@
             child: [
               {
                 name: '海报设计',
-                type: 0
+                type: 1
               },
               {
                 name: '运营配图',
-                type: 0
+                type: 1
               },
               {
                 name: '宣传单设计',
@@ -165,14 +165,14 @@
               },
               {
                 name: '易拉宝/展架',
-                type: 0
+                type: 1
               },
               {
                 name: '折页设计',
                 type: 0
               }, {
                 name: '宣传册设计',
-                type: 0
+                type: 1
               }, {
                 name: '代金券',
                 type: 0
@@ -197,6 +197,7 @@
     methods: {
       navSelect: function (index) {
         this.main_select = index
+        this.min_select = 0
       },
       itemSelect: function (index) {
         this.min_select = index
