@@ -45,39 +45,40 @@
 .process_arrow_1 {
   height: 100px;
   width: 482px;
-}
-.process_arrow_1_line {
-  height: 23px;
-  width: 482px;
-  // border-bottom: 1px dashed #000;
-  border-bottom: 1px solid #a7a7a9;
-}
-.process_arrow_1_arrow {
-  height: 16px;
-  width: 16px;
-  position: relative;
-  top: -8px;
-  left: 233px;
+  .process_arrow_1_line {
+    height: 23px;
+    width: 482px;
+    // border-bottom: 1px dashed #000;
+    border-bottom: 1px solid #a7a7a9;
+  }
+  .process_arrow_1_arrow {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: -8px;
+    left: 233px;
+  }
 }
 
 // 第二个箭头
 .process_arrow_2 {
   height: 100px;
   width: 456px;
+  .process_arrow_2_line {
+    height: 23px;
+    width: 456px;
+    // border-bottom: 1px dashed #000;
+    border-bottom: 1px dashed #a7a7a9;
+  }
+  .process_arrow_2_arrow {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: -8px;
+    left: 220px;
+  }
 }
-.process_arrow_2_line {
-  height: 23px;
-  width: 456px;
-  // border-bottom: 1px dashed #000;
-  border-bottom: 1px dashed #a7a7a9;
-}
-.process_arrow_2_arrow {
-  height: 16px;
-  width: 16px;
-  position: relative;
-  top: -8px;
-  left: 220px;
-}
+
 //   表单标题
 .form_title {
   height: 60px;
@@ -144,6 +145,7 @@
   width: 7px;
   height: 18px;
   margin: 11px 0px 11px 0px;
+  color: red;
 }
 .input_box {
   width: 716px;
@@ -153,11 +155,47 @@
   border-radius: 2px;
   margin-left: 24px;
 }
-.input_box_text {
+.input_box::-webkit-input-placeholder {
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #a7a7a9;
+  padding-left: 18px;
+}
+// 下拉选择 框
+.select_box {
+  width: 716px;
+  height: 40px;
+  background: #f4f4f4;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  margin-left: 24px;
+  // 隐藏箭头
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  //通过padding-left的值让文字居中
+  padding-left: 18px;
+  // 字体
   font-family: PingFangSC-Regular;
   font-size: 13px;
   color: #626262;
   margin-top: 21px;
+}
+// 多行文本框
+.textarea_box {
+  width: 716px;
+  height: 80px;
+  background: #f4f4f4;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  margin-left: 24px;
+}
+.textarea_box::-webkit-input-placeholder {
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #a7a7a9;
+  padding-left: 18px;
+  padding-top: 31px;
 }
 .err_warning {
   width: 216px;
@@ -165,21 +203,23 @@
   display: flex;
   flex-direction: row;
   margin-left: 110px;
-}
-.err_warning_img {
-  width: 14.3px;
-  height: 14.3px;
-  background: #ff3d67;
-}
-.err_warning_text {
-  width: 128px;
-  height: 22px;
-  font-family: PingFangSC-Medium;
-  font-size: 16px;
 
-  color: #333333;
-  text-align: center;
-  margin-left: 22.9px;
+  .err_warning_img {
+    width: 14.3px;
+    height: 14.3px;
+    background: #ff3d67;
+  }
+
+  .err_warning_text {
+    width: 128px;
+    height: 36px;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    line-height: 36px;
+    color: #333333;
+    text-align: center;
+    margin-left: 22.9px;
+  }
 }
 
 // 文件上传
@@ -233,9 +273,11 @@
 //文件上传-分割线
 .upload_files_hr {
   width: 1240px;
-  height: 1px;
+  height: 0px;
+  border: 0.5px solid #DDDDDD;
+  box-shadow :none;
 }
-//文件上传- 按钮区域
+//文件上传- 按钮区域 
 .upload_files_btn_area {
   height: 81px;
   width: 1240px;
@@ -251,17 +293,17 @@
   height: 40px;
   width: 140px;
   border: 1px solid #07aefc;
-background-color: #ffffff;
+  background-color: #ffffff;
   margin-left: 40px;
   margin-top: 20px;
   margin-bottom: 21px;
-}
-.upload_files_btn_text {
+
   font-family: PingFangSC-Medium;
   font-size: 16px;
   color: #07aefc;
   text-align: center;
 }
+
 .upload_files_btn_des {
   font-family: PingFangSC-Regular;
   font-size: 13px;
@@ -299,8 +341,6 @@ background-color: #ffffff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
- 
 }
 .upload_files_seleted_file_img {
   height: 32px;

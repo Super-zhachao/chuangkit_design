@@ -7,6 +7,7 @@ import pay from "./pages/pay/pay.vue";
 import pay_s from "./pages/pay_successful/pay_s.vue";
 import order_c from "./pages/order_center/order_c.vue";
 import server_l from "./pages/server_list/server_l.vue";
+import canvas from "./pages/canvas/canvas.vue";
 export default [
   {
     path: '/',
@@ -43,4 +44,8 @@ export default [
     path: "/server_lu",
     component: server_l
   },
+  {
+    path: "/canvas_u",
+    component: canvas
+  }
 ]

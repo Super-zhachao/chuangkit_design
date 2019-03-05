@@ -40,7 +40,7 @@
         <div class="input_name">联系方式：</div>
         <div class="input_area">
           <div class="input_area_xing">*</div>
-          <input class="input_box" type="text" name=" " placeholder="     姓名">
+          <input class="input_box" type="text" name=" " placeholder="姓名">
           <div class="err_warning" style="display:inline-flex;">
             <img class="err_warning_text_img" src=" " alt="出错">
             <div class="err_warning_text">请输入您的姓名！</div>
@@ -48,82 +48,58 @@
         </div>
         <div class="input_area">
           <div class="input_area_xing">*</div>
-          <input class="input_box" type="text" name=" " placeholder="     留下手机号方便小创联系您">
-          <div class="err_warning" style="display:none;">
-            <img class="err_warning_text_img" src=" " alt="出错">
-            <div class="err_warning_text">请输入您的姓名！</div>
-          </div>
+          <input class="input_box" type="text" name=" " placeholder="留下手机号方便小创联系您">
         </div>
         <!-- 项目名称： -->
         <div class="input_name">项目名称：</div>
         <div class="input_area">
           <div class="input_area_xing">*</div>
-          <input class="input_box" type="text" name=" " placeholder="     为您的项目起一个名字吧">
-          <div class="err_warning" style="display:none;">
-            <img class="err_warning_text_img" src=" " alt="出错">
-            <div class="err_warning_text">请输入您的姓名！</div>
-          </div>
+          <input class="input_box" type="text" name=" " placeholder="为您的项目起一个名字吧">
         </div>
         <!-- 行业： -->
         <div class="input_name">行业：</div>
         <div class="input_area">
           <div class="input_area_xing">*</div>
           <!-- <input class="input_box" type="text" name=" " placeholder="     电商/销售"> -->
-          <select class="input_box" name="hang_ye">
-            <option class="input_box_text" value="volvo">电商/销售</option>
-            <option class="input_box_text" value="saab">日化/日用</option>
-            <option class="input_box_text" value="fiat">电子/家电产品</option>
-            <option class="input_box_text" value="fiat">卫生/卫浴设备</option>
-            <option class="input_box_text" value="fiat">餐饮/酒店/住宿</option>
-            <option class="input_box_text" value="fiat">食品/饮品</option>
+          <select class="select_box" name="hang_ye">
+            <option value=" ">电商/销售</option>
+            <option value=" ">日化/日用</option>
+            <option value=" ">电子/家电产品</option>
+            <option value=" ">卫生/卫浴设备</option>
+            <option value=" ">餐饮/酒店/住宿</option>
+            <option value=" ">食品/饮品</option>
           </select>
-
-          <div class="err_warning" style="display:none;">
-            <img class="err_warning_text_img" src=" " alt="出错">
-            <div class="err_warning_text">请输入您的姓名！</div>
-          </div>
         </div>
         <!-- 行业标签： -->
         <div class="input_name">行业标签：</div>
         <div class="input_area">
           <div class="input_area_xing">*</div>
-          <input class="input_box" type="text" name=" " placeholder="     请填写您的行业标签，多个标签用空格隔开">
-          <div class="err_warning" style="display:none;">
-            <img class="err_warning_text_img" src=" " alt="出错">
-            <div class="err_warning_text">请输入您的姓名！</div>
-          </div>
+          <input class="input_box" type="text" name=" " placeholder="请填写您的行业标签，多个标签用空格隔开">
         </div>
         <!-- 公司介绍 -->
         <div class="input_name">公司介绍：</div>
         <div class="input_area" style="height:80px;">
           <div class="input_area_xing"></div>
-          <input
-            class="input_box"
+
+          <textarea
+            class="textarea_box"
             type="text"
             name=" "
             style="height:80px;"
-            placeholder="     尽可能多的介绍品牌、产品、业务、定位等公司信息"
-          >
-          <div class="err_warning" style="display:none;">
-            <img class="err_warning_text_img" src=" " alt="出错">
-            <div class="err_warning_text">请输入您的姓名！</div>
-          </div>
+            placeholder="尽可能多的介绍品牌、产品、业务、定位等公司信息"
+          ></textarea>
         </div>
         <!-- 需求描述 -->
         <div class="input_name">需求描述：</div>
         <div class="input_area" style="height:80px;">
           <div class="input_area_xing" style=" margin: 31px 0px 11px 0px;">*</div>
-          <input
-            class="input_box"
+          <textarea
+            class="textarea_box"
             type="text"
             name=" "
             style="height:80px;"
-            placeholder="     设计整体风格、视觉色彩等其他要求"
-          >
-          <div class="err_warning" style="display:none;">
-            <img class="err_warning_text_img" src=" " alt="出错">
-            <div class="err_warning_text">请输入您的姓名！</div>
-          </div>
+            placeholder="设计整体风格、视觉色彩等其他要求"
+          ></textarea>
         </div>
       </form>
     </div>
@@ -136,11 +112,9 @@
         >提示！设计师仅负责美术设计，你需要提供以下资料：1、文案具体内容（文字需要可复制粘贴的文档）2、 需要使用的内容图片（如果涉及到版权，则需要单独购买）。</div>
       </div>
       <!-- 分割线 -->
-      <hr class="upload_files_hr">
+      <div class="upload_files_hr"></div>
       <div class="upload_files_btn_area">
-        <button class="upload_files_btn">
-          <div class="upload_files_btn_text">+上传附件</div>
-        </button>
+        <button class="upload_files_btn">+上传附件</button>
         <div
           class="upload_files_btn_des"
         >附件可上传大小不超过10M的 jpg,jpeg,png,txt,zip.xls,rar,xlsx,docx,doc,docm,pdf；上传可参考的图片（包括你的LOGO、竞品包装）或资料文档</div>
@@ -154,23 +128,21 @@
           </div>
           <img class="upload_files_seleted_file_close_img" src="./img/close.png" alt="关闭">
         </div>
-         <div class="upload_files_seleted_file_item">
+        <div class="upload_files_seleted_file_item">
           <div class="upload_files_seleted_file">
             <img class="upload_files_seleted_file_img" src="./img/yasuo.png" alt="压缩包">
             <div class="upload_files_seleted_file_name">需求xxx.rar</div>
           </div>
           <img class="upload_files_seleted_file_close_img" src="./img/close.png" alt="关闭">
         </div>
-         <div class="upload_files_seleted_file_item">
+        <div class="upload_files_seleted_file_item">
           <div class="upload_files_seleted_file">
             <img class="upload_files_seleted_file_img" src="./img/yasuo.png" alt="压缩包">
             <div class="upload_files_seleted_file_name">需求xxx.rar</div>
           </div>
           <img class="upload_files_seleted_file_close_img" src="./img/close.png" alt="关闭">
         </div>
-   
       </div>
-      
     </div>
 
     <div class="step_btn_area">

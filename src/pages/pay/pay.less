@@ -45,38 +45,39 @@
 .process_arrow_1 {
   height: 100px;
   width: 482px;
-}
-.process_arrow_1_line {
-  height: 23px;
-  width: 482px;
-  // border-bottom: 1px dashed #000;
-  border-bottom: 1px solid #a7a7a9;
-}
-.process_arrow_1_arrow {
-  height: 16px;
-  width: 16px;
-  position: relative;
-  top: -8px;
-  left: 233px;
+  .process_arrow_1_line {
+    height: 23px;
+    width: 482px;
+    // border-bottom: 1px dashed #000; border: 1px solid #DDDDDD;
+    border-bottom: 1px solid #a7a7a9;
+  }
+  .process_arrow_1_arrow {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: -8px;
+    left: 233px;
+  }
 }
 
 // 第二个箭头
 .process_arrow_2 {
   height: 100px;
   width: 456px;
-}
-.process_arrow_2_line {
-  height: 23px;
-  width: 456px;
-  // border-bottom: 1px dashed #000;
-  border-bottom: 1px dashed #a7a7a9;
-}
-.process_arrow_2_arrow {
-  height: 16px;
-  width: 16px;
-  position: relative;
-  top: -8px;
-  left: 220px;
+
+  .process_arrow_2_line {
+    height: 23px;
+    width: 456px;
+    // border-bottom: 1px dashed #000;
+    border-bottom: 1px solid #a7a7a9;
+  }
+  .process_arrow_2_arrow {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: -8px;
+    left: 220px;
+  }
 }
 
 .head_proces_item3_arrow {
@@ -100,12 +101,12 @@
 }
 // 订单信息
 .order_info {
-  height: 46px;
+  min-height: 46px;
+  height: auto;
   width: 1160px;
 
   display: flex;
   flex-direction: row;
-
   align-items: center;
 }
 .order_info_title {
@@ -135,7 +136,7 @@
 .order_hr {
   width: 1160px;
   height: 0px;
-  border: 1px solid #dddddd;
+  border: 0.5px solid #dddddd;
 }
 //  订单详情
 .order_detail {
@@ -262,7 +263,7 @@
   line-height: 18px;
 }
 .pay_type {
-  height: 58.5px;
+  height: 50.5px;
   width: 1160px;
   display: flex;
   flex-direction: row;
@@ -345,15 +346,25 @@
   text-align: center;
 }
 // 步骤按钮-同意协议
-.step_btn_agree {
-  width: 160px;
-  height: 22px;
-  font-family: PingFangSC-Medium;
-  font-size: 16px;
-  color: #7b7b7b;
-  margin-left: 66px;
+
+.ckeck_agree {
+  width: 14px;
+  height: 14px;
+  margin-left: 36px;
 }
 
+.ckeck_agree_text {
+  width: 138px;
+  height: 22px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #7b7b7b;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 22px;
+
+  margin-left: 8px;
+}
 .pay_money_text {
   font-family: PingFangSC-Regular;
   font-size: 12px;

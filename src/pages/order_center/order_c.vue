@@ -7,7 +7,6 @@
         <div class="head_btn">
           <div class="head_btn_text">印刷订单</div>
         </div>
-
         <div class="head_btn">
           <div class="head_btn_text">VIP订单</div>
         </div>
@@ -21,8 +20,8 @@
 
       <div class="head_btns_2">
         <div class="head_btn_2">开票历史</div>
-        <div class="head_btn_3">
-          <div class="head_btn_3_text">申请发票</div>
+        <div class="head_btn_2_1">
+          <div class="head_btn_2_1_text">申请发票</div>
         </div>
       </div>
     </div>

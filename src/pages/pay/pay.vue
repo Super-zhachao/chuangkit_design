@@ -38,7 +38,7 @@
         <div class="order_info_time">2017/03/12 20:23:56</div>
         <div class="order_info_id">订单号：1728 3872 8487</div>
       </div>
-      <hr class="order_hr">
+      <div class="order_hr"></div>
       <!-- 订单详情 -->
       <div class="order_detail">
         <img class="order_detail_img" src="./img/pay_order_img.png" alt="订单">
@@ -58,17 +58,17 @@
           </div>
         </div>
       </div>
-      <hr class="order_hr">
+      <div class="order_hr"></div>
       <div class="order_total">
         <div class="order_total_title">合计</div>
         <div class="order_total_price">￥ 890.00</div>
       </div>
-      <hr class="order_hr">
+      <div class="order_hr"></div>
       <div class="pay_type">
         <div class="pay_type_title">选择支付方式</div>
       </div>
 
-      <hr class="order_hr">
+      <div class="order_hr"></div>
       <div class="pay_type_content">
         <div class="pay_type_content1">
           <div class="pay_type_content1_text">账户余额</div>
@@ -88,10 +88,9 @@
       <button class="step_btn_pre">上一步
         <!-- <div class="step_btn_pre_text">上一步</div> -->
       </button>
-
-      <div class="step_btn_agree">
-        <input type="checkbox" name="category" value="今日话题">同意创客贴服务协议
-      </div>
+      
+      <input class="ckeck_agree" type="checkbox">
+      <div class="ckeck_agree_text">同意创客贴服务协议</div>
 
       <div class="pay_money_text">应付金额</div>
       <div class="pay_money_value">¥899.00</div>
